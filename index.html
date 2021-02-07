@@ -11,7 +11,8 @@
 
   <h6>Playing Badminton</h6>
   <p>Playing a sport activity daily makes moment in every part of our body and makes us more <b>strong</b> and
-    <b>healthy</b></p>
+    <b>healthy</b>
+  </p>
 
   <hr>
   <ol>
@@ -90,11 +91,32 @@
   <h3>Code Display</h3>
 
   <h4>BASIC</h4>
-  <q>BASIC (Beginners' All-purpose Symbolic Instruction Code)[1] is a family of general-purpose, high-level programming languages whose design philosophy emphasizes ease of use.<br>
-     The original version was designed by John G. Kemeny and Thomas E. Kurtz and released at Dartmouth College in 1964. <br>
-     They wanted to enable students in fields other than science and mathematics to use computers.<br>
-    At the time, nearly all use of computers required writing custom software, which was something only scientists and mathematicians tended to learn.
+  <q>BASIC (Beginners' All-purpose Symbolic Instruction Code)[1] is a family of general-purpose, high-level programming
+    languages whose design philosophy emphasizes ease of use.<br>
+    The original version was designed by John G. Kemeny and Thomas E. Kurtz and released at Dartmouth College in 1964.
+    <br>
+    They wanted to enable students in fields other than science and mathematics to use computers.<br>
+    At the time, nearly all use of computers required writing custom software, which was something only scientists and
+    mathematicians tended to learn.
   </q>
+  <a href="https://en.wikipedia.org/wiki/BASIC)">Learn More</a>
+  <pre>
+    INPUT "What is your name: "; U$
+ PRINT "Hello "; U$
+ INPUT "How many stars do you want: "; N
+ S$ = ""
+FOR I = 1 TO N
+ S$ = S$ + "*"
+ NEXT I
+ PRINT S$
+ INPUT "Do you want more stars? "; A$
+ IF LEN(A$) = 0 THEN GOTO 90
+ A$ = LEFT$(A$, 1)
+ IF A$ = "Y" OR A$ = "y" THEN GOTO 30
+ PRINT "Goodbye "; U$
+ END
+</pre>
+  <a href="https://en.wikipedia.org/wiki/BASIC)">Learn More</a>
 </body>
 
 </html>
